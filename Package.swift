@@ -2,7 +2,7 @@
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
-#if os(Windows)
+
 let package = Package(
     name: "GLFWSwift",
     products: [
@@ -32,6 +32,3 @@ let package = Package(
             dependencies: ["GLFWSwift"]),
     ]
 )
-#else
-fatalError("Unsupported platform")
-#endif
