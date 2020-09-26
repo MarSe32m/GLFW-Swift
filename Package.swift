@@ -21,8 +21,7 @@ let package = Package(
         .target(
             name: "GLFWSwift",
             dependencies: [],
-
-            cSettings: [.define("_GLFW_WIN32")],
+            cSettings: [.define("_GLFW_WIN32", .when(platforms: [.windows]))],
             linkerSettings: [
                         .linkedLibrary("User32"),
                         .linkedLibrary("ComCtl32"),
