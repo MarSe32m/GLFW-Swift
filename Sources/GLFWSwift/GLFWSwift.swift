@@ -1,4 +1,5 @@
 @_exported import CGLFW
+@_exported import stb_image
 
 public let glCullFace = glad_glCullFace!
 public let glFrontFace = glad_glFrontFace!

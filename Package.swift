@@ -14,6 +14,8 @@ let package = Package(
         // .package(url: /* package url */, from: "1.0.0"),
     ],
     targets: [
+        .target(name: "stb_image",
+                cSettings: [.define("STB_IMAGE_IMPLEMENTATION")]),
         .target(name: "CGLFW",
                 cSettings: [.define("_GLFW_WIN32", .when(platforms: [.windows]))],
                 linkerSettings: [
@@ -23,6 +25,6 @@ let package = Package(
             ]),
         .target(
             name: "GLFWSwift",
-            dependencies: ["CGLFW"])
+            dependencies: ["CGLFW", "stb_image"])
     ]
 )
