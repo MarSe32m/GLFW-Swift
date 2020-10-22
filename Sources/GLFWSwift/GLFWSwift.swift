@@ -1,4 +1,4 @@
-@_exported import glfw
+@_exported import CGLFW
 
 public let glCullFace = glad_glCullFace!
 public let glFrontFace = glad_glFrontFace!
