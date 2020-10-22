@@ -21,8 +21,10 @@ let package = Package(
                         .linkedLibrary("ComCtl32"),
                         .linkedLibrary("OpenGL32"),
             ]),
+            .target(name: "glfw",
+                    resources: [.process("glfw3.dll")]),
         .target(
             name: "GLFWSwift",
-            dependencies: ["CGLFW"])
+            dependencies: ["glfw"])
     ]
 )
