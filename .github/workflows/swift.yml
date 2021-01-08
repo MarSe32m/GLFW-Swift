@@ -74,7 +74,7 @@ jobs:
       run: swift build -v -c debug
     - name: Build (Release)
       run: swift build -v -c release
-    - name: Test (Debug)
-      run: swift test -v --configuration debug
-    - name: Test (Release)
-      run: swift test -v --configuration release -Xswiftc -enable-testing
+    #- name: Test (Debug)
+    #  run: swift test -v --configuration debug
+    #- name: Test (Release)
+    #  run: swift test -v --configuration release -Xswiftc -enable-testing
