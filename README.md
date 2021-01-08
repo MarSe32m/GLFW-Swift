@@ -1,3 +1,3 @@
 # glfw-swift
 
-A description of this package.
+Swift package for GLFW. Right now only works on Windows since it's manually compiled.
